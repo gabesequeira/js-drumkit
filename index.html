@@ -73,5 +73,12 @@
     <audio data-key='75'></audio>
     <audio data-key='76'></audio>
 
+<script>
+    window.addEventListener('keydown', function (e) {
+        const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+        if(!audio) return; //stop function from running altogether.
+    });
+    </script>
+
 </body>
 </html>
